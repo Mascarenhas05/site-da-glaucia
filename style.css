@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease; /* Transição de cor de fundo */
+}
+
+.product-box {
+    display: flex;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    max-width: 300px;
+    transition: transform 0.3s ease; /* Animação ao trocar */
+}
+
+.main-image:hover {
+    transform: scale(1.1); /* Efeito zoom */
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.thumb {
+    width: 60px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.thumb.active, .thumb:hover {
+    border-color: #3498db;
+}
+
+.product-details {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    margin: 15px 0;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.color-box:hover {
+    transform: scale(1.2);
+}
+
+.color-box.active {
+    border-color: #333;
+}
+
+.color-box.blue { background-color: #2c3e50; }
+.color-box.red { background-color: #c0392b; }
+.color-box.black { background-color: #333; }
+
+.buy-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #2980b9;
+}
+
