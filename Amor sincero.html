@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapateixon</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="ChatGPT Image 15 de abr. de 2026, 16_01_16.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background: #bc2727;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+
+        nav a:hover {
+            background: orange;
+            border-radius: 5px;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 60px;
+            background: #f4f4f4;
+        }
+
+        .banner button {
+            padding: 10px 20px;
+            border: none;
+            background: #bc2727;
+            color: white;
+            cursor: pointer;
+        }
+
+        .produtos {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 200px;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ÁUDIO -->
+    <audio id="bg-music" loop>
+        <source src="02 Muié, Chapéu e Butina.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Sapateixon</div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="masculino.html">Masculino</a>
+            <a href="feminino.html">Feminino</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h1>Os sapatos dos mais mais 👟</h1>
+        <p>Estilo, conforto e atitude</p>
+        <button>Ver coleção</button>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="produtos">
+        <h2>Mais vendidos</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <img src="modelo1.jpg" alt="Tênis Street">
+                <h3>Tênis Street</h3>
+                <p>R$ 199,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="modelo2.jpg" alt="Tênis Casual">
+                <h3>Tênis Casual</h3>
+                <p>R$ 149,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="modelo3.jpg" alt="Slip On">
+                <h3>Slip On</h3>
+                <p>R$ 129,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="modelo4.jpg" alt="Chunky Style">
+                <h3>Chunky Style</h3>
+                <p>R$ 219,90</p>
+                <button>Comprar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Sapateixon - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
